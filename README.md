@@ -1,7 +1,12 @@
 # Voron-2.4-CBT
 Correction logiciel Voron 2.4 CBT de cher Magix Phoenix + améliorations
 
-### Commençons déjà par les ajouts :
+### Scripts utiles :
+  - [Shake&Tune de Klippain par frix-x](https://github.com/Frix-x/klippain-shaketune)
+  - [Octoeverywhere](https://octoeverywhere.com/)
+  - [Klipper TMC Autotune de andrewmcgr](https://github.com/andrewmcgr/klipper_tmc_autotune)
+    
+### Mods avec achats :
   - [BTT HDMI 5"](https://fr.aliexpress.com/item/1005005889257573.html?spm=a2g0o.order_list.order_list_main.27.5cdb5e5bHcPF79&gatewayAdapt=glo2fra) pour le mod [HDMI5 case for Voron 2.4 
  de Deady](https://www.printables.com/fr/model/586475-hdmi5-case-for-voron-24-300)
   - [OV5648-Caméra USB 120° Auto Focus](https://fr.aliexpress.com/item/1005003833993617.html?spm=a2g0o.order_list.order_list_main.21.5cdb5e5bHcPF79&gatewayAdapt=glo2fra) pour le mod [Angry CAM USB de chri.kai.in](https://mods.vorondesign.com/details/RYpQW53mtem8Nj1JKqiSQ)
