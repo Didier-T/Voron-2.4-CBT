@@ -13,7 +13,7 @@ Correction logiciel Voron 2.4 CBT de cher Magix Phoenix + améliorations
   - [BTT Relay v1.2](https://fr.aliexpress.com/item/32972603577.html?spm=a2g0o.order_list.order_list_main.10.5cdb5e5bHcPF79&gatewayAdapt=glo2fra) à installer avec les fixations [Bigtreetech Relay V1.2 Din Mount de Kenneth Walters](https://www.printables.com/fr/model/445328-bigtreetech-relay-v12-din-mount) et [DIN Rail Bracket - Heat Insert de mmuellerphoto - version standard](https://www.printables.com/fr/model/420009-din-rail-bracket-heat-insert-version)
   - [Bouton Poussoir 12x12x7](https://fr.aliexpress.com/item/1005006384754591.html?spm=a2g0o.order_list.order_list_main.5.5cdb5e5bHcPF79&gatewayAdapt=glo2fra) pour le mod [V2.4 Skirt Buttons de xbst_](https://mods.vorondesign.com/details/7TfCWsFfVYrayrgWemf2Qg), il y a une erreur dans son descriptif. les boutons de 12x12x5 sont trop courts, il faut des boutons de 12x12x7 ou modifier le trou dans ses boutons et les passer de 1,7 mm à 0,5 mm (le fichier étape est fourni)
 
-### Maintenant les mods utiles sans achats nécessaires :
+### Mods sans achats nécessaires :
   - [Voron V2.4 Side Panel Lock de core3d studio](https://www.printables.com/fr/model/253623-voron-v24-side-panel-lock-more-fit-to-frame)
   - [Voron 2.4 CanBus Umbilical de Locki](https://www.printables.com/fr/model/384279-voron-24-canbus-umbilical-mod/files)
   - [Bowden Tube Guide de Galvanic](https://mods.vorondesign.com/details/8CxQeqS1lXhlGphwkyqh7g)
