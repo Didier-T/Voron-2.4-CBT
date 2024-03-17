@@ -31,19 +31,19 @@ Cette ajout nécéssite l'utilisation d'un bouton poussoir pour la mise en march
 
     [Voir la procedure MAJ de Magic Phoenix](https://mpx.wiki/Firmware-Flash/Updating_Manta_klipper_firmware_remotely) avec l'activation de la pin
 
-    ![menuconfig screen 1]()
+    ![menuconfig screen 1](https://github.com/Didier-T/Voron-2.4-CBT/blob/main/Images/Capture%20d'%C3%A9cran%202024-03-17%20165626.png)
 
-    ![menuconfig screen 2]()
+    ![menuconfig screen 2](https://github.com/Didier-T/Voron-2.4-CBT/blob/main/Images/Capture%20d'%C3%A9cran%202024-03-17%20165709-2.png)
 
   - [Puis activer votre RPI en tant que MCU secondaire](https://github.com/Klipper3d/klipper/blob/master/docs/RPi_microcontroller.md)
   - Il ne reste plus qu'a brancher
 
     pour le bouton poussoir et l'alimentation se référer a la cature suivante
     
-    ![brochage BTT relay]()
+    ![brochage BTT relay](https://github.com/Didier-T/Voron-2.4-CBT/blob/main/Images/s-l1600-7-1_3.jpg)
     
     pour l'extinction auto et l'autoalimentation nous allons utiliser les broches 4 et 6 (alimentation) ainsi que les broches 7 et 9 (signal d'arrêt)
     
-    ![broche GPIO CB1]()
+    ![broche GPIO CB1](https://github.com/Didier-T/Voron-2.4-CBT/blob/main/Images/bigtreetech-40-pin-gpio-cm4-cb1-mapping-2.png)
     
     Les broches 4 et 6 sont a connecter aux broches 5v et GND. Les broches 7 et 9 sont à connecter aux broche S et G de "Automatique shutdown after printing signal line"
