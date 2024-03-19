@@ -25,8 +25,6 @@ Correction logiciel Voron 2.4 CBT de cher Magix Phoenix + améliorations
 ### Installation du BTT relay :
 Cette ajout nécéssite l'utilisation d'un bouton poussoir pour la mise en marche de l'imprimante ainsi que de reflasher le M8P
 
-**Attention, lors des maj et en cas d'arret d'urgence veuillez restez appuyé sur le bouton poussoir pour éviter que l'imprimante ne s'éteigne automatiquement**
-
   - Dans un premier temps il nous faut flasher l'imprimante en lui demandant de démarrer avec un pin activé (celui de l'automatien du relay, non documenté cher BTT...)
 
     [Voir la procedure MAJ de Magic Phoenix](https://mpx.wiki/Firmware-Flash/Updating_Manta_klipper_firmware_remotely) avec l'activation de la pin
