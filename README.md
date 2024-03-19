@@ -25,15 +25,13 @@ Correction logiciel Voron 2.4 CBT de cher Magix Phoenix + améliorations
 ### Installation du BTT relay :
 Cette ajout nécéssite l'utilisation d'un bouton poussoir pour la mise en marche de l'imprimante ainsi que de reflasher le M8P
 
-**Attention, lors des maj et en cas d'arret d'urgence veuillez restez appuyé sur le bouton poussoir pour éviter que l'imprimante ne s'éteigne automatiquement**
-
   - Dans un premier temps il nous faut flasher l'imprimante en lui demandant de démarrer avec un pin activé (celui de l'automatien du relay, non documenté cher BTT...)
 
     [Voir la procedure MAJ de Magic Phoenix](https://mpx.wiki/Firmware-Flash/Updating_Manta_klipper_firmware_remotely) avec l'activation de la pin
 
-    ![menuconfig screen 1](https://github.com/Didier-T/Voron-2.4-CBT/blob/main/Images/Capture%20d'%C3%A9cran%202024-03-17%20165626.png)
+    ![menuconfig screen 1](https://github.com/Didier-T/Voron-2.4-CBT/blob/main/Images/Capture%20d'%C3%A9cran%202024-03-17%20165709-2.png)
 
-    ![menuconfig screen 2](https://github.com/Didier-T/Voron-2.4-CBT/blob/main/Images/Capture%20d'%C3%A9cran%202024-03-17%20165709-2.png)
+    ![menuconfig screen 2](https://github.com/Didier-T/Voron-2.4-CBT/blob/main/Images/Capture%20d'%C3%A9cran%202024-03-17%20165626.png)
 
   - [Puis activer votre RPI en tant que MCU secondaire](https://github.com/Klipper3d/klipper/blob/master/docs/RPi_microcontroller.md)
   - Il ne reste plus qu'a brancher
@@ -47,3 +45,37 @@ Cette ajout nécéssite l'utilisation d'un bouton poussoir pour la mise en march
     ![broche GPIO CB1](https://github.com/Didier-T/Voron-2.4-CBT/blob/main/Images/bigtreetech-40-pin-gpio-cm4-cb1-mapping-2.png)
     
     Les broches 4 et 6 sont a connecter aux broches 5v et GND. Les broches 7 et 9 sont à connecter aux broche S et G de "Automatique shutdown after printing signal line"
+
+  ### Mise en place de l'extinction via l'écran (bouton en bas a droite)
+
+  - il va falloir se connecter au terminal via ssh (pour rappel id:biqu mdp:biqu)
+  - ensuite nous allons créer un fichier shutdown.service
+
+    
+  ### Mise en place de l'extinction via l'écran (bouton en bas a droite)
+
+  - il va falloir se connecter au terminal via ssh (pour rappel id:biqu mdp:biqu)
+- ensuite nous allons créer un fichier shutdown.service
+```
+sudo nano /etc/systemd/system/shutdown.service
+```
+  - puis copier le text suivant (clic droit pour coller dans nano)
+```
+[Unit]
+Description=Arret machine
+
+[Service]
+Type=oneshot
+User=biqu
+RemainAfterExit=yes
+ExecStop=gpioset 0 71=0
+
+[Install]
+WantedBy=multi-user.target
+```
+  - Ctrl+x pour fermer, pensez à valider l'enregistrement (y puis touche entrée)
+  - Ensuite nous activons notre service
+```
+sudo systemctl enable shutdown.service
+sudo systemctl start shutdown
+```
