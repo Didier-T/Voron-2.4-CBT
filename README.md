@@ -46,3 +46,36 @@ Cette ajout nécéssite l'utilisation d'un bouton poussoir pour la mise en march
     
     Les broches 4 et 6 sont a connecter aux broches 5v et GND. Les broches 7 et 9 sont à connecter aux broche S et G de "Automatique shutdown after printing signal line"
 
+  ### Mise en place de l'extinction via l'écran (bouton en bas a droite)
+
+  - il va falloir se connecter au terminal via ssh (pour rappel id:biqu mdp:biqu)
+  - ensuite nous allons créer un fichier shutdown.service
+
+    
+  ### Mise en place de l'extinction via l'écran (bouton en bas a droite)
+
+  - il va falloir se connecter au terminal via ssh (pour rappel id:biqu mdp:biqu)
+- ensuite nous allons créer un fichier shutdown.service
+```
+sudo nano /etc/systemd/system/shutdown.service
+```
+  - puis copier le text suivant (clic droit pour coller dans nano)
+```
+[Unit]
+Description=Arret machine
+
+[Service]
+Type=oneshot
+User=biqu
+RemainAfterExit=yes
+ExecStop=gpioset 0 71=0
+
+[Install]
+WantedBy=multi-user.target
+```
+  - Ctrl+x pour fermer, pensez à valider l'enregistrement (y puis touche entrée)
+  - Ensuite nous activons notre service
+```
+sudo systemctl enable shutdown.service
+sudo systemctl start shutdown
+```
