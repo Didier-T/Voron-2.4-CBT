@@ -36,7 +36,7 @@ Cette ajout nécéssite l'utilisation d'un bouton poussoir pour la mise en march
   - [Puis activer votre RPI en tant que MCU secondaire](https://github.com/Klipper3d/klipper/blob/master/docs/RPi_microcontroller.md)
   - Il ne reste plus qu'a brancher
 
-    pour le bouton poussoir et l'alimentation se référer a la cature suivante
+    pour le bouton poussoir et l'alimentation se référer a la capture suivante
     
     ![brochage BTT relay](https://github.com/Didier-T/Voron-2.4-CBT/blob/main/Images/s-l1600-7-1_3.jpg)
     
